@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  ms-wave:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ms-wave-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MS_WAVE_USER=Mrinmoy Saikia
+      - MS_WAVE_PASSWORD=2229
+      - SEARXNG_URL=http://searxng:8080
+      - SESSION_SECRET=ms_wave_secret_production_key
+    depends_on:
+      - searxng
+    restart: unless-stopped
+
+  searxng:
+    image: searxng/searxng:latest
+    container_name: ms-wave-searxng
+    ports:
+      - "8080:8080"
+    environment:
+      - SEARXNG_BASE_URL=http://localhost:8080
+    restart: unless-stopped

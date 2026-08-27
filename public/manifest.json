@@ -1,0 +1,17 @@
+{
+  "short_name": "Ms Wave",
+  "name": "Ms Wave — Multi-Source AI Metasearch Engine",
+  "description": "Next-generation multi-source metasearch engine created by Mrinmoy Saikia.",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233B82F6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12h2.5L7 4l4 16 3-8 2 4h6'/%3E%3C/svg%3E",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#070A11",
+  "theme_color": "#070A11",
+  "display": "standalone",
+  "orientation": "portrait"
+}

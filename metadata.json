@@ -1,0 +1,6 @@
+{
+  "name": "Ms Wave",
+  "description": "Multi-Source AI and Metasearch Engine created by Mrinmoy Saikia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
